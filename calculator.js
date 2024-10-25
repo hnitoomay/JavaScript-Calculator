@@ -151,16 +151,16 @@ clickMeBtn.addEventListener('click', function() {
 // Handle number buttons
 dataNumber.forEach(button => {
     button.addEventListener('click', function() {
-        calculator.appendToCalculation(button.innerText);  // Add the clicked number
-        calculator.updateDisplay();  // Update the display
+        calculator.appendToCalculation(button.innerText);  
+        calculator.updateDisplay();  
     });
 });
 
 // Handle operator buttons
 dataOperator.forEach(button => {
     button.addEventListener('click', function() {
-        calculator.appendToCalculation(button.innerText);  // Add the clicked operator
-        calculator.updateDisplay();  // Update the display
+        calculator.appendToCalculation(button.innerText);  
+        calculator.updateDisplay();  
     });
 });
 
@@ -177,7 +177,7 @@ dataAllClear.addEventListener('click', function() {
 });
 
 dataDelete.addEventListener('click', function() {
-    calculator.deleteLast();  // Call the deleteLast method when the delete button is clicked
+    calculator.deleteLast();  
 });
 //    button.innerText = '1'.
 //    calculator.appendNumber('1') is called.
