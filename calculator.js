@@ -23,10 +23,8 @@ class Calculator {
     }
 
     // Add the clicked number/operator to the current input
-    appendToCalculation(value) {
-        
+    appendToCalculation(value) {   
         this.calculationString += value.toString();  // Append numbers and operators to the string
-       
     }
 
     // Perform the calculation when "=" is clicked
@@ -51,8 +49,7 @@ class Calculator {
     }
 
   
-    deleteLast() {
-        
+    deleteLast() {       
         this.calculationString = this.calculationString.slice(0, -1);
         this.updateDisplay();  // Update the display after deleting
     }
@@ -77,8 +74,8 @@ clickMeBtn.addEventListener('click', function() {
 // Handle number buttons
 dataNumber.forEach(button => {
     button.addEventListener('click', function() {
-        calculator.appendToCalculation(button.innerText);  // Add the clicked number
-        calculator.updateDisplay();  // Update the display
+        calculator.appendToCalculation(button.innerText);  
+        calculator.updateDisplay();  
     });
 });
 
@@ -103,7 +100,7 @@ dataAllClear.addEventListener('click', function() {
 });
 
 dataDelete.addEventListener('click', function() {
-    calculator.deleteLast();  // Call the deleteLast method when the delete button is clicked
+    calculator.deleteLast();  
 });
 //    button.innerText = '1'.
 //    calculator.appendNumber('1') is called.
