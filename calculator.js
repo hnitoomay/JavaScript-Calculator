@@ -23,10 +23,8 @@ class Calculator {
     }
 
     // Add the clicked number/operator to the current input
-    appendToCalculation(value) {
-        
+    appendToCalculation(value) {   
         this.calculationString += value.toString();  // Append numbers and operators to the string
-       
     }
 
     // Perform the calculation when "=" is clicked
@@ -51,8 +49,7 @@ class Calculator {
     }
 
   
-    deleteLast() {
-        
+    deleteLast() {       
         this.calculationString = this.calculationString.slice(0, -1);
         this.updateDisplay();  // Update the display after deleting
     }
